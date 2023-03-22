@@ -1,0 +1,89 @@
+.mainTextstyles {
+  letter-spacing: 0.02em;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  margin-left: 93px;
+}
+.nav__list {
+  gap: 46px;
+  display: flex;
+  font-weight: 500;
+  list-style-type: none;
+}
+.nav__link {
+  color: $main-text-color;
+  @extend .mainTextstyles;
+  display: block;
+  padding: 32px 0;
+  transition: color 250ms $cubic-bezier;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $acent-color;
+  }
+}
+.contact {
+  list-style-type: none;
+  gap: 50px;
+  margin-left: auto;
+  @extend .header;
+}
+.contact__link {
+  transition: color 250ms $cubic-bezier;
+  color: $owner-text-color;
+  @extend .header;
+  @extend .mainTextstyles;
+
+  &:hover,
+  &:focus {
+    color: $acent-color;
+  }
+}
+.nav__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.nav__link-current {
+  position: relative;
+  color: $acent-color;
+
+  &::after {
+    display: block;
+    content: "";
+    border-radius: 2px;
+    background: $acent-color;
+    padding: 2px;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 360px) {
+}
+
+@media (min-width: 768px) {
+  .contact {
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact {
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+}

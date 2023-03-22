@@ -1,0 +1,19 @@
+.logo {
+  color: $acent-color;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  .header__logo-element {
+    padding-top: 25px;
+    padding-bottom: 24px;
+    color: $logo-color-text;
+  }
+  .footer__logo-element {
+    margin-bottom: 20px;
+    color: $secondary-text-color;
+  }
+}

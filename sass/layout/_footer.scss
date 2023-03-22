@@ -1,0 +1,122 @@
+.footerAddresstyles {
+  transition: color 250ms $cubic-bezier;
+  color: rgba(255, 255, 255, 0.6);
+  &:hover,
+  &:focus {
+    color: $acent-color;
+  }
+}
+.footer {
+  display: flex;
+  align-items: baseline;
+}
+.footer__background {
+  background-color: $background-footer-color;
+  padding: 60px 0;
+}
+.footer__contact-address {
+  @extend .footerAddresstyles;
+  color: $secondary-text-color;
+}
+.footer__contact-email {
+  @extend .footerAddresstyles;
+}
+.footer__contact-tel {
+  @extend .footerAddresstyles;
+}
+.footer__contact-item {
+  width: 246px;
+  margin-bottom: 9px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer__social {
+  margin-left: 70px;
+  margin-right: 93px;
+}
+.footer__social-list {
+  @extend .teamMainStyles;
+  gap: 10px;
+  margin: auto;
+}
+.footer__social-icon {
+  margin: 12px 12px;
+  fill: currentColor;
+}
+.footer__social-item {
+  @extend .teamMainStyles;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.footer__social-title {
+  text-transform: uppercase;
+  font-family: $main-font;
+  color: $secondary-text-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+.footer__social-link {
+  transition: color 250ms $cubic-bezier, background-color 250ms $cubic-bezier;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $buttons-port-color;
+  &:hover,
+  &:focus {
+    background-color: $acent-color;
+  }
+}
+.newsletter__label {
+  display: flex;
+}
+.newsletter__title {
+  color: $secondary-text-color;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+.newsletter__input {
+  font-family: $main-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: $secondary-text-color;
+  padding: 15px 18px;
+  background-color: $background-footer-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  transition: border-color 250ms $cubic-bezier;
+}
+.newsletter__button {
+  display: flex;
+  align-items: center;
+  color: $secondary-text-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  width: 200px;
+  height: 50px;
+  padding: 10px 0px 10px 42px;
+  background-color: $acent-color;
+  transition: color 250ms $cubic-bezier, background-color 250ms $cubic-bezier,
+    box-shadow 250ms $cubic-bezier;
+  &:hover,
+  &:focus {
+    background-color: $buttom-hover-color;
+  }
+}
+.newsletter__button-icon {
+  margin: 13px 28px 13px 24px;
+}

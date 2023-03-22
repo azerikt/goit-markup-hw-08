@@ -1,0 +1,46 @@
+.projectMainStyles {
+  font-family: $main-font;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+.project {
+  padding-top: 0px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+.project__title {
+  @extend .projectMainStyles;
+  margin-bottom: 50px;
+  color: $main-text-color;
+  font-size: 36px;
+  line-height: 1.61;
+  text-align: center;
+}
+.project__list {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+}
+.project__item {
+  position: relative;
+}
+.project__desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  @extend .projectMainStyles;
+  bottom: 0px;
+  width: 100%;
+  height: 70px;
+  background-image: linear-gradient(
+    to top,
+    rgba(47, 48, 58, 0.8),
+    rgba(47, 48, 58, 0.8)
+  );
+  color: $secondary-text-color;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+}
