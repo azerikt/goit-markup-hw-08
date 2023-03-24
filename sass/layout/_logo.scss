@@ -17,3 +17,13 @@
     color: $secondary-text-color;
   }
 }
+
+@media (min-width: 360px) {
+  .logo {
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1200px) {
+}
