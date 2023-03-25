@@ -34,9 +34,9 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
 .footer__social {
-  margin-left: 70px;
-  margin-right: 93px;
+  margin-top: 52px;
 }
 .footer__social-list {
   @extend .teamMainStyles;
@@ -53,7 +53,6 @@
   border-radius: 50%;
 }
 .footer__social-title {
-  margin-top: 52px;
   text-align: center;
   text-transform: uppercase;
   font-family: $main-font;
@@ -127,7 +126,9 @@
 .newsletter__button-icon {
   margin: 13px 28px 13px 24px;
 }
-
+.footer-addres-logo {
+  text-align: center;
+}
 @media (min-width: 480px) {
   .newsletter__input {
     width: 450px;
@@ -141,11 +142,22 @@
   }
 }
 @media (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  .footer__social {
+    margin: 0px;
+  }
 }
 @media (min-width: 1200px) {
   .footer {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     align-items: baseline;
   }
   .newsletter__label {
@@ -168,16 +180,24 @@
   .footer__contact-item {
     text-align: left;
   }
+  .footer__social {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
   .footer__social-title {
     margin-top: 0px;
     text-align: left;
   }
   .newsletter__title {
+    text-align: left;
     margin-top: 0px;
   }
   .newsletter__label {
     display: flex;
     flex-direction: row;
     align-items: start;
+  }
+  .footer-addres-logo {
+    text-align: left;
   }
 }
